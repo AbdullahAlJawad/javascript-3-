@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Glenn Maxwell</title></head>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            var str="Javascript";
+            document.write(str.toUpperCase());
+            let str1="MAXWELL";
+            console.log(str1.toLowerCase());
+            let str2="glenn";
+            alert(str2.toUpperCase());
+            let str3="heinrich klassen";
+            console.log(str3.startsWith("heinrich"));
+            console.log(str3.startsWith("klassen"));
+            console.log(Math.random());
+            var fruits=["mango","banana","apple","lichi","orange"];
+            var text="";
+            var i;
+            for(i=0;i<fruits.length;i++)
+        {
+            text=text + fruits[i] + "<br>";
+        }
+        document.getElementById("demo1").innerHTML=text;
+        let day = prompt("Enter a day of the week (1 for Monday, 2 for Tuesday, etc.):");
+        day = parseInt(day);
+        switch(day){
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+            case 3:
+                console.log("Wednesday");
+                break; 
+            case 4:
+                console.log("Thursday");
+                break; 
+            case 5:
+                console.log("Friday");
+                break; 
+            case 6:
+                console.log("Saturday");
+                break; 
+             case 7:
+                console.log("Sunday");
+                break;
+            default:
+                console.log("Invalid input!!!!please enter a number between 1 to 7 ")
+        }
+        </script>
+    </body>
+</html>
